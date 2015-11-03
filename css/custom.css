@@ -1,0 +1,8 @@
+.top_menu_hidden.open {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    z-index: 100;
+    display: block;
+}
+
