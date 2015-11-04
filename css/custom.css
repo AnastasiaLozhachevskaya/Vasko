@@ -1,8 +1,28 @@
 .top_menu_hidden.open {
     position: fixed;
     width: 100%;
-    background-color: gray;
+    background-color: #252525;
     z-index: 100;
     display: block;
+}
+
+.top_menu_hidden.open ul li {
+    border-bottom: 1px solid #353535;
+    text-align: center;
+}
+
+.top_menu_hidden.open ul li:last-child {
+    border-bottom: none;
+}
+
+.top_menu_hidden.open ul li a {
+    /**/
+    color: #FFFFFF;
+    padding: 13px 20px;
+    display: block;
+}
+
+.top_menu_hidden.open ul li a:hover{
+    background-color: #1f5f29;
 }
 

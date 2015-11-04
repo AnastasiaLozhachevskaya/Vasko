@@ -537,7 +537,7 @@ body {
 	}
 
 	.menu_hidden ul li a {
-	    padding: 16px 1em;
+		padding: 16px 0.9em;
 	}
 
 body {
@@ -593,7 +593,7 @@ body {
 	}
 
 	.menu ul li a {
-	    padding: 21px 0.8em; 
+		padding: 21px 0.7em;
 	}
 
 	body {

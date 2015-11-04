@@ -5,6 +5,43 @@
 
     $(document).ready(function () {
 
+        $(".royalSlider").royalSlider({
+            arrowsNav: true,
+            loop: true,
+            autoPlay: true,
+            keyboardNavEnabled: true,
+            usePreloader: true,
+            controlsInside: false,
+            imageScaleMode: 'fill',
+            arrowsNavAutoHide: true,
+            //autoScaleSlider: false,
+            autoScaleSliderWidth: 1600,
+            autoScaleSliderHeight: 400,
+            //controlNavigation: 'bullets',
+            thumbsFitInViewport: false,
+            navigateByClick: true,
+            startSlideId: 0,
+            transitionType:'move',
+            //transitionSpeed: 600,
+            globalCaption: false,
+            deeplinking: {
+                enabled: true,
+                change: false
+            },
+            autoPlay: {
+                enabled: true,
+                //pauseOnHover: true,
+                delay: 	4000
+            }
+            /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+            //imgWidth: 1400,
+            //imgHeight: 400
+        });
+
+        $(".small_menu_btn, .menu_item").click(function() {
+            $("#sandwich").toggleClass("active");
+        });
+
         $(".parallax_window").parallax({imageSrc: "img/bg.jpg"});
         $(".parallax_itp").parallax({imageSrc: "img/bg.jpg"});
         $(".parallax_decimals").parallax({imageSrc: "img/bg.jpg"});
@@ -42,28 +79,44 @@
 
 
 
-        // $('a, div.search input[type="submit"]').css({
-        // 	'transition' : '0.5s'
-        // });
 
-        //r('.text-container_1', 'fade-in');
-        // r('.catalogue .button', 'roll-in-left');
+
+
+
+
         //r('.pros .line .pro', 'push-in-down');
-        //r('.production .button', 'clip-y-in');
-        //r('footer', 'slide-in-up');
 
-        //r('.about', 'fade-in', 500);
-        //r('.categories', 'fade-in', 700);
-        //r('.pop_artic', 'fade-in', 900);
-        //r('.contacts', 'fade-in', 1100);
+        //r('.menu', 'slide-in-left');
+        r('.pre_text', 'fade-in-up');
 
-        // r('.logo_1', 'flip-in-y', 300);
 
-        // r('.logo_2', 'clip-y-in');
+        r('.right', 'push-in-right');
+        r('.pros', 'slide-in-up');
+        r('.left', 'push-in-left');
 
-        // r('.production .foto', 'fade-in');
+        r('.itp h2', 'scale-in');
 
-        // r('.menu', 'slide-in-left');
+
+        r('.foto_right', 'slide-in-right', 200);
+        r('.production_text', 'slide-in-left', 200);
+        r('.text', 'slide-in-right', 200);
+        r('.foto_left', 'slide-in-left', 200);
+
+
+        r('footer', 'slide-in-up', 200);
+
+        r('.about', 'fade-in', 700);
+        r('.categories', 'fade-in', 900);
+        r('.pop_artic', 'fade-in', 1100);
+        r('.contacts', 'fade-in', 1300);
+
+
+
+
+
+
+
+
         for (var i = 7; i >= 1; i--) {
             r('.menu li:nth-child(' + i + ')', 'fade-in', (7 - i) * 50);
         }
@@ -186,8 +239,6 @@
         if (delay == undefined) {
             delay = 0;
         }
-
-        //delay = delay || 0;
 
         var elem = $(selector);
         if (elem.length == 0){

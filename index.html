@@ -6,15 +6,18 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	
-	
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico?">
+
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap-grid.min.css" />
 	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="libs/magnific-popup/magnific-popup.css" />
-	<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="libs/slider/royalslider.css" />
+	<link rel="stylesheet" type="text/css" href="libs/slider/skins/default/rs-default.css" />
+	<!--<link rel="stylesheet" type="text/css" href="libs/animate/animate.min.css" />-->
+	<link rel="stylesheet" type="text/css" href="libs/animate/awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="css/media.css">
@@ -30,18 +33,56 @@
 <div class="container top_hidden_row">
 					<div class="row">
 							<div class="small_menu">
-								<button class="small_menu_btn">МЕНЮ</button>
+								<button class="small_menu_btn">
+									<div id="sandwich">
+										<div class="sw-topper"></div>
+										<div class="sw-bottom"></div>
+										<div class="sw-footer"></div>
+									</div>
+								</button>
 							</div>
 							<div class="top_menu_hidden">
 								<ul>
-							       <li><a href="#">Главная</a></li>
-							       <li><a href="#">Производство</a></li>
-							       <li><a href="#">Буферные емкости</a></li>
-							       <li><a href="#">ИТП</a></li>
-							       <li><a href="#">Для диллеров</a></li>
-							       <li><a href="#">Статьи</a></li>
-							       <li><a href="#">Контакты</a></li>
-						        </ul>
+									<li><a href="#">Главная</a></li>
+									<li data-toggle="collapse" data-target="#prod"><a href="#">Производство</a>
+										<!--<ul id="prod" class="collapse">-->
+											<!--<li><a href="#">Буферные емкости</a></li>-->
+											<!--<li><a href="#">ИТП</a></li>-->
+											<!--<li><a href="#">Насосные станции</a></li>-->
+										<!--</ul>-->
+									</li>
+									<li data-toggle="collapse" data-target="#buf"><a href="#">Буферные емкости</a>
+										<!--<ul id="buf" class="collapse">-->
+											<!--<li><a href="#">Буферные емкости 1</a></li>-->
+											<!--<li><a href="#">Буферные емкости 2</a></li>-->
+											<!--<li><a href="#">Буферные емкости 3</a></li>-->
+											<!--<li><a href="#">Буферные емкости 4</a></li>-->
+											<!--<li><a href="#">Буферные емкости 5</a></li>-->
+											<!--<li><a href="#">Буферные емкости 6</a></li>-->
+											<!--<li><a href="#">Буферные емкости 7</a></li>-->
+											<!--<li><a href="#">Для диллеров</a></li>-->
+										<!--</ul>-->
+
+									</li>
+									<li data-toggle="collapse" data-target="#itp_m"><a href="#">ИТП</a>
+										<!--<ul id="itp_m" class="collapse">-->
+											<!--<li><a href="#">Отопление</a></li>-->
+											<!--<li><a href="#">Горячее водоснабжение</a></li>-->
+											<!--<li><a href="#">Вентиляция</a></li>-->
+											<!--<li><a href="#">Технологии</a></li>-->
+											<!--<li><a href="#">Галерея</a></li>-->
+										<!--</ul>-->
+									</li>
+									<li data-toggle="collapse" data-target="#nas"><a href="#">Насосные станции</a>
+										<!--<ul id="nas" class="collapse">-->
+											<!--<li><a href="#">Водоснабжение</a></li>-->
+											<!--<li><a href="#">Пожаротушение</a></li>-->
+											<!--<li><a href="#">Галерея</a></li>-->
+										<!--</ul>-->
+									</li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
 
 							</div>
 					</div>
@@ -194,47 +235,78 @@
 
 						<div class="col-md-9 col-sm-7 col-xs-7 items">
 
-						<div class="top_items">
-							<div class="search">
-						        <form action="#" method="POST">
-						            <input type="text" placeholder="Поиск">
-						            <input type="submit" value="Искать">
-						        </form>
-					        </div>
-
-					        <div class="lang">
-					            <select>
-					                <option>Русский</option>
-					                   <option>Украинский</option>
-					            </select>            
-				            </div>
-
-				            <div class="tel">
-					            <p><i class="fa fa-phone"></i>+380 67 627 4444</p>
-					            <p>+380 67 627 4444</p>
-				            </div>
-
-				            <div class="call">
-								<div class="callback">
-									<a href="#">Перезвонить вам</a>
+							<div class="top_items">
+								<div class="search">
+									<form action="#" method="POST">
+										<input type="text" placeholder="Поиск">
+										<input type="submit" value="Искать">
+									</form>
 								</div>
-					        </div>
-						</div>
 
-						<div class="clear"></div>
+								<div class="lang">
+									<select>
+										<option>Русский</option>
+										   <option>Украинский</option>
+									</select>
+								</div>
 
-						<div class="menu">
-							<ul>
-						       <li><a href="#">Главная</a></li>
-						       <li><a href="#">Производство</a></li>
-						       <li><a href="#">Буферные емкости</a></li>
-						       <li><a href="#">ИТП</a></li>
-						       <li><a href="#">Для диллеров</a></li>
-						       <li><a href="#">Статьи</a></li>
-						       <li><a href="#">Контакты</a></li>
-					        </ul>
+								<div class="tel">
+									<p><i class="fa fa-phone"></i>+380 67 627 4444</p>
+									<p>+380 67 627 4444</p>
+								</div>
 
-						</div>
+								<div class="call">
+									<div class="callback">
+										<a href="#">Перезвонить вам</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="menu">
+								<ul>
+								   <li><a href="#">Главная</a></li>
+								   <li><a href="#">Производство</a>
+										<ul>
+											<li><a href="#">Буферные емкости</a></li>
+											<li><a href="#">ИТП</a></li>
+											<li><a href="#">Насосные станции</a></li>
+										</ul>
+									</li>
+								   <li><a href="#">Буферные емкости</a>
+										<ul>
+											<li><a href="#">Буферные емкости 1</a></li>
+											<li><a href="#">Буферные емкости 2</a></li>
+											<li><a href="#">Буферные емкости 3</a></li>
+											<li><a href="#">Буферные емкости 4</a></li>
+											<li><a href="#">Буферные емкости 5</a></li>
+											<li><a href="#">Буферные емкости 6</a></li>
+											<li><a href="#">Буферные емкости 7</a></li>
+											<li><a href="#">Для диллеров</a></li>
+										</ul>
+
+								   </li>
+								   <li><a href="#">ИТП</a>
+										<ul>
+											<li><a href="#">Отопление</a></li>
+											<li><a href="#">Горячее водоснабжение</a></li>
+											<li><a href="#">Вентиляция</a></li>
+											<li><a href="#">Технологии</a></li>
+											<li><a href="#">Галерея</a></li>
+										</ul>
+								   </li>
+								   <li><a href="#">Насосные станции</a>
+										<ul>
+											<li><a href="#">Водоснабжение</a></li>
+											<li><a href="#">Пожаротушение</a></li>
+											<li><a href="#">Галерея</a></li>
+										</ul>
+								   </li>
+								   <li><a href="#">Статьи</a></li>
+								   <li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
 
 						</div>
 					</div>
@@ -243,14 +315,46 @@
 						<div class="row hidden_row">
 							<div class="menu_hidden">
 								<ul>
-							       <li><a href="#">Главная</a></li>
-							       <li><a href="#">Производство</a></li>
-							       <li><a href="#">Буферные емкости</a></li>
-							       <li><a href="#">ИТП</a></li>
-							       <li><a href="#">Для диллеров</a></li>
-							       <li><a href="#">Статьи</a></li>
-							       <li><a href="#">Контакты</a></li>
-						        </ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Производство</a>
+										<ul>
+											<li><a href="#">Буферные емкости</a></li>
+											<li><a href="#">ИТП</a></li>
+											<li><a href="#">Насосные станции</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Буферные емкости</a>
+										<ul>
+											<li><a href="#">Буферные емкости 1</a></li>
+											<li><a href="#">Буферные емкости 2</a></li>
+											<li><a href="#">Буферные емкости 3</a></li>
+											<li><a href="#">Буферные емкости 4</a></li>
+											<li><a href="#">Буферные емкости 5</a></li>
+											<li><a href="#">Буферные емкости 6</a></li>
+											<li><a href="#">Буферные емкости 7</a></li>
+											<li><a href="#">Для диллеров</a></li>
+										</ul>
+
+									</li>
+									<li><a href="#">ИТП</a>
+										<ul>
+											<li><a href="#">Отопление</a></li>
+											<li><a href="#">Горячее водоснабжение</a></li>
+											<li><a href="#">Вентиляция</a></li>
+											<li><a href="#">Технологии</a></li>
+											<li><a href="#">Галерея</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Насосные станции</a>
+										<ul>
+											<li><a href="#">Водоснабжение</a></li>
+											<li><a href="#">Пожаротушение</a></li>
+											<li><a href="#">Галерея</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Статьи</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
 
 							</div>
 						</div>
@@ -268,15 +372,37 @@
 
 
 	<!-- SLIDER	 -->
-	<section class="parallax_window shadow">
-		<div class="container">
+	<section class="">
+		<!--<div class="container">-->
 			<div class="row">
 				<div class="col-md-12 col-sm-12 slider">
-					<img src="img/slider1.png"> <!-- height="400" width="1200" -->
+					<!--<img src="img/slider1.png"> &lt;!&ndash; height="400" width="1200" &ndash;&gt;-->
+					<div class="royalSlider rsDefault">
+						<!--<div id="full-width-slider" class="royalSlider heroSlider rsMinW">-->
+							<div class="rsContent">
+								<img class="rsImg" src="img/slide1.jpg" alt="" />
+								<div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+
+								</div>
+							</div>
+							<div class="rsContent">
+								<img class="rsImg" src="img/slide1.jpg" alt="" />
+								<div class="infoBlock  rsAbsoluteEl" style="color:#000;" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+
+								</div>
+							</div>
+							<div class="rsContent">
+								<img class="rsImg" src="img/slide1.jpg" alt="" />
+								<div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+
+								</div>
+							</div>
+
+						<!--</div>-->
+					</div>
 				</div>
-				
 			</div>
-		</div>
+		<!--</div>-->
 	</section>
 
 
@@ -374,7 +500,7 @@
 		<section class="mrg_big">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-12 foto left">
+					<div class="col-md-4 col-sm-4 col-xs-12 foto foto_right">
                 			<img src="img/foto.jpg" alt="">
 					</div>
 					<div class="col-md-8 col-sm-8 col-xs-12">
@@ -438,7 +564,7 @@
 		                        like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		                </div>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 foto right">
+					<div class="col-md-4 col-sm-4 col-xs-12 foto foto_left">
 		                    <img class="logo_2" src="img/logo2.png" alt="">
 					</div>
 				</div>
@@ -579,6 +705,7 @@
 	
 	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
 	<script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/slider/jquery.royalslider.min.js"></script>
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/mixitup/mixitup.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
